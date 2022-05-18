@@ -32,4 +32,11 @@ module.exports = {
   plugins: [
       new VueLoaderPlugin()
   ],
+  devServer: {
+    static: {
+      directory: resolve(__dirname, 'dist'),
+    },
+    compress: true,
+    port: 9000,
+  },
 };
